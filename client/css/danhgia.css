@@ -1,0 +1,84 @@
+.review-form {
+    display: none; /* Ẩn form mặc định */
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.review-form h3 {
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.review-form label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.review-form input[type="text"],
+.review-form select,
+.review-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s ease-in-out;
+}
+
+.review-form input[type="text"]:focus,
+.review-form select:focus,
+.review-form textarea:focus {
+    border-color: #ff9800;
+    outline: none;
+}
+
+.review-form textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+/* Căn chỉnh nút bấm */
+.review-form .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.review-form button {
+    flex: 1; /* Chia đều độ rộng */
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin: 0 5px; /* Khoảng cách giữa 2 nút */
+}
+
+/* Nút Gửi đánh giá */
+.review-form button[type="submit"] {
+    background: #ff9800;
+    color: white;
+}
+
+.review-form button[type="submit"]:hover {
+    background: #e68900;
+}
+
+/* Nút Hủy đánh giá */
+.review-form button[type="reset"] {
+    background: forestgreen;
+    color: white;
+}
+
+.review-form button[type="reset"]:hover {
+    background:yellowgreen;
+}

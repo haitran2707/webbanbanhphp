@@ -1,0 +1,76 @@
+/* Định dạng chung cho trang */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Tạo hộp chứa thông tin đơn hàng */
+.order-container {
+    background: #fff;
+    width: 60%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* Định dạng bảng chi tiết đơn hàng */
+table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #fdfdfd;
+    font-size: 16px;
+}
+
+/* Nút quay về trang chủ */
+a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: #218838;
+}

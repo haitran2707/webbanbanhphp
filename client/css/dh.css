@@ -1,0 +1,100 @@
+/* Định dạng tiêu đề đơn hàng */
+h2 {
+    text-align: center;
+    color: #8b4513;
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+/* Bảng đơn hàng */
+table {
+    width: 95%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Tiêu đề của bảng */
+table th {
+    background: #8b4513;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Ô dữ liệu trong bảng */
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Làm nổi bật hàng chẵn */
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hiệu ứng khi di chuột vào hàng */
+table tr:hover {
+    background-color: #f1e5d7;
+}
+
+/* Mã đơn hàng */
+td:nth-child(2) {
+    font-weight: bold;
+    color: #8b4513;
+}
+
+/* Trạng thái đơn hàng */
+td:nth-child(4) {
+    font-weight: bold;
+    color: #d2691e;
+}
+
+/* Tổng tiền */
+td:nth-child(5) {
+    font-weight: bold;
+    color: #ff4500;
+}
+
+/* Địa chỉ giao hàng */
+td:nth-child(6) {
+    text-align: left;
+    max-width: 200px;
+    word-wrap: break-word;
+}
+
+/* Nút "Xem" */
+td form {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+td button {
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+td button:hover {
+    background-color: #d2691e;
+}
+
+/* Căn giữa ô "Bạn chưa có đơn hàng nào" */
+td[colspan='8'] {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+    padding: 20px;
+}
